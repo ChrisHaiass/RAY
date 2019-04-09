@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+	<!-- ================================================================================================================ -->
+	<!-- Cabeza de una estructura de una página web <head> ... </head> ================================================== -->
+	<!--    - Configuración base de nuestra página web y el navegador. 
+		    - Enlaces a recursos externos, estilos y scripts     -->
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Ejercicio 1 | RAY 2018</title>
+		<meta name="description" content="Contenido, teoría y ejercicios de la asignatura RAY - 2018">
+		<meta name="author" content="G.R.P.">
+
+		<!-- Enlaces a archivos externos que definen estilos css -->
+		<link href="../style/bootstrap.min.css" rel="stylesheet">
+		<link href="../style/font-awesome.min.css" rel="stylesheet">
+		<link href="../style/animate.min.css" rel="stylesheet"> 
+		<link href="../style/lightbox.css" rel="stylesheet"> 
+		<link href="../style/main.css" rel="stylesheet">
+		<link href="../style/responsive.css" rel="stylesheet">
+
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- Enlaces a las imágenes a usar como iconos del navegador -->
+		<link rel="shortcut icon" href="../resources/image/ico/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../resources/image/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../resources/image/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../resources/image/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="../resources/image/ico/apple-touch-icon-57-precomposed.png">
+
+	</head>
+	<!-- ================================================================================================================ -->
+
+
+	<!-- ================================================================================================================ -->
+	<!-- Cuerpo de una estructura de una página web <body> ... </body> ================================================== -->
+	<!--    - Sección contenedora de todos los elementos renderizables por el navegador. 
+		    - Cargas "tardías" de recursos externos -->
+	<body style="background-image:url(wa.jpg)">
+		<!-- ================================================================================================================ -->
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<header id="header">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-sm-12 overflow">
+						<div class="social-icons pull-right">
+							<ul class="nav nav-pills">
+								<li><a href=""><i class="fa fa-facebook"></i></a></li>
+								<li><a href=""><i class="fa fa-twitter"></i></a></li>
+								<li><a href=""><i class="fa fa-google-plus"></i></a></li>
+								<li><a href=""><i class="fa fa-dribbble"></i></a></li>
+								<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+							</ul>
+						</div> 
+					</div>
+				</div>
+
+			</div> <!-- div#ray-title.container -->
+			<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+			<div class="navbar navbar-inverse" role="banner">
+				<div class="container">
+
+					<div class="navbar-header">
+						<!-- Menú tipo botón expandible para la versión móvil -->
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Logo y enlace a la página de inicio -->
+						<a class="navbar-brand" href="../index.html">
+							<h1><img src="../resources/image/logo2.png" alt="logo"></h1>
+						</a>
+					</div>
+
+					<!-- Barra de navegación -->
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="../index.html">Inicio</a></li>
+                              <li class="dropdown"><a href="videojuegos.html">Videojuegos<i class="fa fa-angle-down"></i></a>
+								<ul role="menu" class="sub-menu">
+									<li><a href="videojuegos/bricks.html">BRICKS</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"><a href="teoria.html">Teoría <i class="fa fa-angle-down"></i></a>
+								<ul role="menu" class="sub-menu">
+									<li><a href="tema001.html">Tema 1</a></li>
+									<!--
+									<li><a href="aboutus.html">About</a></li>
+									<li><a href="aboutus2.html">About 2</a></li>
+									<li><a href="service.html">Services</a></li>
+									<li><a href="pricing.html">Pricing</a></li>
+									<li><a href="contact.html">Contact us</a></li>
+									<li><a href="contact2.html">Contact us 2</a></li>
+									<li><a href="404.html">404 error</a></li>
+									<li><a href="coming-soon.html">Coming Soon</a></li>
+									-->
+								</ul>
+							</li>
+
+							<li class="dropdown"><a href="practicas.html">Prácticas <i class="fa fa-angle-down"></i></a>
+								<ul role="menu" class="sub-menu">
+									<li><a href="ejercicio001.html">Ejercicios 1</a></li>
+                                    <li><a href="ejercicio002.html">Ejercicios 2</a></li>
+                                    <li><a href="ejercicio003.html">Ejercicios 3</a></li>
+
+									<!--
+									<li><a href="blog.html">Blog Default</a></li>
+									<li><a href="blogtwo.html">Timeline Blog</a></li>
+									<li><a href="blogone.html">2 Columns + Right Sidebar</a></li>
+									<li><a href="blogthree.html">1 Column + Left Sidebar</a></li>
+									<li><a href="blogfour.html">Blog Masonary</a></li>
+									<li><a href="blogdetails.html">Blog Details</a></li>
+									-->
+								</ul>
+							</li>
+
+							<li class="dropdown"><a href="portfolio.html">Portfolio <i class="fa fa-angle-down"></i></a>
+								<ul role="menu" class="sub-menu">
+									<li><a href="galeria.html">Galería</a></li>
+									<li><a href="cv.html ">Curriculum Vitae</a></li>
+
+									<!--
+									<li><a href="portfoliofour.html">Isotope 3 Columns + Right Sidebar</a></li>
+									<li><a href="portfolioone.html">3 Columns + Right Sidebar</a></li>
+									<li><a href="portfoliotwo.html">3 Columns + Left Sidebar</a></li>
+									<li><a href="portfoliothree.html">2 Columns</a></li>
+									<li><a href="portfolio-details.html">Portfolio Details</a></li>
+									-->
+								</ul>
+							</li>
+							
+							<li><a href="recursos.html ">Recursos</a></li>
+						</ul>
+					</div>
+
+					<div class="search">
+						<form role="form">
+							<i class="fa fa-search"></i>
+							<div class="field-toggle">
+								<input type="text" class="search-form" autocomplete="off" placeholder="Search">
+							</div>
+						</form>
+					</div>
+
+				</div>
+
+			</div> <!-- div#ray-navbar.navbar.navbar-inverse -->
+
+			<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		</header>
+		<!--/#header - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<!-- ================================================================================================================ -->
+
+		<!-- ================================================================================================================ -->
+		<section id="home-slider2" style="background-color: rgba(200,200,200,0.5);">
+			<div class="container">
+				<div class="row">
+					<div class="main-slider">
+						<div class="slide-text">
+							<h1 style="color: black">¿Qué es CSS3?</h1>
+							<table>
+							   <tr>
+							   	<td class="first"><b><i style="font-family:Homer Simpson">CSS significa Cascade Style Sheets, también llamado Hojas de Estilo en Cascada. CSS es un lenguaje de marcado que se emplea para dar formato a un sitio web.
+							   	</br> Cabe agregar que el lenguaje CSS3 se puede aplicar en la misma hoja en la que estás desarrollando un documento HTML, pero por motivos de productividad se suele realizar en un documento aparte con la extensión .css. Este documento se puede vincular a cada página HTML que conforme el sitio web, es por ello que es más útil realizar los estilos por separado.
+							   </br>CSS3 sirve para cambiar el aspecto de un sitio web, desde las medidas para los márgenes hasta las especificaciones para las imágenes y el texto. CSS3 funciona mediante módulos, algunos de los más comunes son “colors”, “fonts”, “backgrounds”, etc.
+                               </br>
+                               Es decir, funciona en conjunto con los archivos HTML. Por esta razón, para crear un sitio web debes saber tanto HTML como CSS.
+							   </b></i>
+							    
+
+
+</hr color="red">
+<H2 style="color: blue">¿Ejemplos de Selectores?</H2><b>Los selectores definen sobre qué elementos se aplicará un conjunto de reglas.</b>
+<BLOCKQUOTE> Selectores de tipo</BLOCKQUOTE>
+<b>Selecciona todos los elementos que coinciden con el nombre dado.
+Sintáxis: eltname
+Ejemplo: input aplicará a cualquier elemento < input >.</b>
+<BLOCKQUOTE>Selectores de clase</BLOCKQUOTE>
+<b>Selecciona todos los elementos dado un atributo de class.
+Sintáxis: .classname
+Ejemplo: .index se aplicará a cualquier elemento que tenga la clase "index".</b>
+<BLOCKQUOTE>Selectores de ID</BLOCKQUOTE>
+<b>Selecciona un elemento basándose en el valor de su atributo id. Debería existir únicamente un elemento con un ID dado en un documento.
+Sintáxis: #idname
+Ejemplo: #toc se aplicará a cualquier elemento que tenga el ID "toc".</b>
+<BLOCKQUOTE>Selector universal</BLOCKQUOTE>
+<b>Selecciona todos los elementos. Puede estar restringido a un espacio de nombres o a todos los espacios de nombres.</b>
+Sintáxis: * ns|* *|*
+Ejemplo: * se aplicará a todos los elementos del documento.</b>
+<BLOCKQUOTE>Selectores de atributo</BLOCKQUOTE>
+<b>Selecciona elementos basándose en el valor de un atributo dado.
+Sintáxis: [attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value]
+Ejemplo: [autoplay] se aplicará a todos los elementos que tengan el atributo "autoplay" asignado (a cualquier valor).</b>
+<br></hr>
+<H2 style="color: blue">¿Ejemplos de Posición?</H2><b>La posición define los parámetros de medidas que tendrán los recursos</b>
+<BLOCKQUOTE> DISPLAY</BLOCKQUOTE>
+<b>Es la propiedad más importante para controlar estructuras. <br>Cada elemento tiene un valor de display por defecto dependiendo de qué tipo de elemento sea.<br> El valor por defecto para la mayoría de los elementos es usualmente block (de bloque) o inline (en línea). <br>Un elemento que es block es comunmente llamado elemento block-level. Un elemento inline siempre es llamado elemento inline.</b>
+<BLOCKQUOTE>POSITION</BLOCKQUOTE>
+<b>Especifica cómo un elemento es posicionado en el documento. 
+Las propiedades 
+<ul>
+	<li>-top</li>
+	<li>-right</li>
+    <li>-bottom</li>
+    <li>-left</li> </ul> 
+<br> Determinan la ubicación final de los elementos posicionados.</b>
+<BLOCKQUOTE>MARGIN</BLOCKQUOTE>
+<b>Establece el margen para los cuatro lados. <br> Es una abreviación para evitar tener que establecer cada lado por separado con las otras propiedades de margen: 
+<ul>
+	<li>margin-top</li>
+	<li>margin-right</li>
+    <li>margin-bottom</li>
+    <li>margin-left</li> </ul> </b>
+<BLOCKQUOTE>PADDING</BLOCKQUOTE>
+<b>Establece el espacio de relleno requerido por todos los lados de un elemento. 
+<br> El área de padding es el espacio entre el contenido del elemento y su borde (border) no se permiten valores negativos.</b>
+<BLOCKQUOTE>TEXT-ALIGN</BLOCKQUOTE>
+<b>Establece la alineación del contenido de un elemento de bloque
+<ul>
+	<li>left</li>
+	<li>right</li>
+    <li>center</li>
+    <li>justify</li>
+    <li>inherit</li> </ul> </b>
+</hr> </br>
+<H2 style="color: blue">Decorando en css</H2><b>Se usan para dar aspecto personalizado a los elementos.</b>
+<BLOCKQUOTE> BACKGROUND </BLOCKQUOTE>
+<b>Es un atajo para definir los valores individuales del fondo en una única regla CSS.<br> Se puede usar background para definir los valores de una o de todas las propiedades
+	<ul>
+	<li>background-attachment</li>
+	<li>color</li>
+    <li>position</li>
+    <li>image</li>
+    <li>repeat</li> </ul> </b>
+
+<BLOCKQUOTE>COLOR</BLOCKQUOTE>
+<b>Selecciona el valor de color de primer plano del contenido de elemento de texto y decoraciones de texto</b>
+<BLOCKQUOTE>BORDER</BLOCKQUOTE>
+<b>Permite definir de un golpe todos los bordes en una única regla de la hoja de estilos.
+<ul>
+	<li>border-width</li>
+	<li>border-style</li>
+    <li>border-color</li>
+   </ul></b>
+<BLOCKQUOTE>BOX-SHADOW</BLOCKQUOTE>
+<b>Describe uno o más efectos de sombra como una lista separada por comas.</b>
+<BLOCKQUOTE>FONT</BLOCKQUOTE>
+<b>Permite establecer de una sola vez los valores para todas las propiedades.
+<ul>
+	<li>font-style</li>
+	<li>font-variant</li>
+    <li>font-weight</li>
+    <li>font-stretch</li>
+    <li>font-size</li>
+    <li>line-height</li>
+    <li>font-family</li>
+   </ul</b>
+<br>
+<H2 style="color: blue">Media Queries</H2><b>Las Media queries consisten de un media type y una o mas expresiones, implicando características del medio, la cual se resuelve como verdadera o falsa.
+<br>
+ El resultado de la consulta es verdadera si el tipo de medio especificado en el media query concuerda con el tipo de dispositivo que está siendo mostrado y todas las expresiones en el media query son verdaderas.
+<blockquote><!-- CSS media query on a link element -->
+< link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
+
+<!-- CSS media query within a style sheet -->
+< style >
+@media (max-width: 600px) {
+  .facet_sidebar {
+    display: none;
+  }
+}
+< /style> </blockquote></b>
+</hr> </br>
+
+
+
+						
+						<td><p><b>Descripción</b>:Esta página está ambientada en estilo fantasía. Tiene dierentes detalles de estilo y juega con la combinación de colores oscuros y brillantinos así como los traslúcidos.
+							</p>
+						</hr>
+						<b>Mapa de Navegación</b>: Se pueden encontrar en esta página diferentes apartados. 
+						<ul><li><b>Inicio:</b> muestra la página principal.</li>
+						<li><b>Teoría:</b> todavía en construcción.</li>
+						<li><b>Prácticas:</b> se subdivide en los apartados de ejercicios. "Ejercicio 1,2,...".</li>
+						<li><b>Portfolio:</b> todavía en construcción.</li>
+					<li><b>TEMLP. CHEETSHEET:</b> todavía en construcción.</li></ul>
+					</hr>
+					<b>Mockup</b>: Es la imagen con su descripción en la columna izquierda. 
+				    </br>
+				<b>Recursos</b>: En esta página web se han usado elementos como <i style="color: red"><b>HTML,CSS,JAVASCRIPT Y CANVA.</b></i>
+			</td></td>
+			
+						</tr>
+					</table>
+
+						</div>
+						<img src="../resources/image/home/slider/hill.png" class="slider-hill" alt="slider image">
+					</div>
+				</div>
+			</div>
+			<div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+		</section>
+		<!--/#home-slider-->
+		<!-- ================================================================================================================ -->
+
+		<!-- ================================================================================================================ -->
+			<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center bottom-separator">
+						<img src="resources/image/home/unde.png" class="img-responsive inline" alt="">
+					</div>
+					
+					<div class="col-md-4 col-sm-6">
+						<div class="testimonial bottom">
+							
+							</div>
+							<!--
+							<div class="media">
+								<div class="pull-left">
+									<a href="#"><img src="resources/image/home/profile2.png" alt=""></a>
+								</div>
+								<div class="media-body">
+									<blockquote>Capicola nisi flank sed minim sunt aliqua rump pancetta leberkas venison eiusmod.</blockquote>
+									<h3><a href="">- Abraham Josef</a></h3>
+								</div>
+							</div> 
+							-->
+						</div> 
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="contact-info bottom" style="color: white">
+							<h2>Contacto</h2>
+							<address>
+							E-mail: <a href="maciasanimacion@gmail.com">MACIASANIMACIÓN</a> <br> 
+							Teléfono: 691832858 <br>  
+							</address>
+
+							<h2>Dirección</h2>
+							<address>
+							Tenerife,Calle España <br> 
+							Tabaiba Baja,6 <br> 
+							España <br> 
+							</address>
+						</div>
+					</div>
+
+					<!--
+					<div class="col-md-4 col-sm-12">
+						<div class="contact-form bottom">
+							<h2>Send a message</h2>
+							<form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
+								<div class="form-group">
+									<input type="text" name="name" class="form-control" required="required" placeholder="Name">
+								</div>
+								<div class="form-group">
+									<input type="email" name="email" class="form-control" required="required" placeholder="Email Id">
+								</div>
+								<div class="form-group">
+									<textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Your text here"></textarea>
+								</div>
+								<div class="form-group">
+									<input type="submit" name="submit" class="btn btn-submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+					-->
+
+					<div class="col-sm-12">
+						<div class="copyright-text text-center">
+							<p>CIFP César Manrique 2018.</p>
+							<p>Modificación de la plantilla: <a target="_blank" href="">G.R.P.</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--/#footer-->
+		<!-- ================================================================================================================ -->
+
+		<!-- ================================================================================================================ -->
+		<!-- Carga "tardía" de librerías de scripts externos -->
+		<script type="text/javascript" src="../script/jquery.js"></script>
+		<script type="text/javascript" src="../script/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../script/lightbox.min.js"></script>
+		<script type="text/javascript" src="../script/wow.min.js"></script>
+		<script type="text/javascript" src="../script/main.js"></script>
+		<!-- ================================================================================================================ -->
+	</body>
+	<!-- ================================================================================================================ -->
+</html>

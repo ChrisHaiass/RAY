@@ -1,0 +1,61 @@
+
+section#game-section {
+    width: 500px;
+    height:380px;
+    background-color:black;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+     z-index: 900;
+}
+
+div#gameBackground {
+background-image: url("../pages/videojuegos/mando.jpeg");
+position: fixed;
+width: 100%;
+height: 100%;
+top: 0px;
+left: 0px;
+z-index: 800;
+display: block;
+
+}
+
+canvas#gameCanvas {
+    width: 480px;
+    height:320px;
+    background-color:transparent; 
+    position: relative;
+    top:10px;
+    display: block;
+    margin: auto;
+    z-index: 901;
+}
+
+div#gameButtonsSec {
+    width: 480px;
+    height:30px;
+    background-color: white ;
+    position: relative;
+    margin: auto;
+    top: 20px;
+     z-index: 901;
+
+}
+
+button#startButton {
+    width: 100px;
+    height:30px;
+    background-color:white ;
+    margin-right: 10px;
+     z-index: 9002;
+}
+
+button#reloadButton {
+    width: 100px;
+    height:30px;
+    background-color: red;
+    margin-left: 10px;
+     z-index: 902;
+}
